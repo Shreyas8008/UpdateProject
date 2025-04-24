@@ -1,0 +1,330 @@
+{% extends 'base.html' %}
+
+{% block title %}Stock Dashboard{% endblock %}
+
+{% block content %}
+<h2 style="text-align: center; margin-top: 30px;">📊 Stock Summary</h2>
+
+<!-- KPIs Section -->
+<div class="kpi-container">
+    <div class="kpi-card">
+        <h3>Total Inventory</h3>
+        <p id="totalInventory" class="kpi-value"></p>
+    </div>
+    <div class="kpi-card">
+        <h3>Total Inventory Value</h3>
+        <p id="totalInventoryValue" class="kpi-value"></p>
+    </div>
+    <div class="kpi-card">
+        <h3>Pending Purchase Orders</h3>
+        <p id="totalPurchaseOrders" class="kpi-value"></p>
+    </div>
+    <div class="kpi-card">
+        <h3>Low Stock Alerts</h3>
+        <p id="lowStockAlerts" class="kpi-value low-stock"></p>
+    </div>
+</div>
+
+<!-- Charts -->
+<div class="container">
+    <div class="chart-container">
+        <canvas id="closingStockPieChart"></canvas>
+    </div>
+    <div class="chart-container">
+        <canvas id="stockChart"></canvas>
+    </div>
+</div>
+
+<!-- Stock Summary Table -->
+<div class="bottom-container">
+    <div class="bottom-chart-container">
+        <canvas id="stockTrendChart"></canvas>
+    </div>
+    <div class="stock-summary">
+        <h3 style="text-align: center;">Stock Summary by Item</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Category</th>
+                    <th>Opening</th>
+                    <th>Closing</th>
+                    <th>Rate</th>
+                    <th>Purchase Orders</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in stock_chart_data %}
+                <tr>
+                    <td>{{ item.item_name }}</td>
+                    <td>{{ item.category }}</td>
+                    <td>{{ item.opening }}</td>
+                    <td>{{ item.closing }}</td>
+                    <td>{{ item.rate }}</td>
+                    <td>{{ item.purchase_orders }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Recent Activity Section -->
+<div class="recent-activity-container">
+    <h3 style="text-align: center;">🔔 Recent Activity & Notifications</h3>
+    <ul id="recentActivityList" class="recent-activity-list"></ul>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const data = {{ stock_chart_data|safe }};
+    const notifications = [];
+
+    let totalInventory = 0;
+    let totalInventoryValue = 0;
+    let totalPurchaseOrders = 0;
+    let lowStockAlerts = 0;
+
+    data.forEach(item => {
+        const closing = parseFloat(item.closing);
+        const rate = parseFloat(item.rate);
+        const purchase = parseInt(item.purchase_orders);
+
+        totalInventory += closing;
+        totalInventoryValue += closing * rate;
+        totalPurchaseOrders += purchase;
+
+        if (closing < 10) {
+            lowStockAlerts++;
+            notifications.push({
+                type: 'alert',
+                message: `Low stock alert for ${item.item_name}!`,
+                time: new Date().toLocaleTimeString()
+            });
+        }
+
+        if (item.category === 'Inward' || item.category === 'Outward') {
+            notifications.push({
+                type: 'inout',
+                message: `Material ${item.category}: ${item.item_name}`,
+                time: new Date().toLocaleTimeString()
+            });
+        }
+    });
+
+    document.getElementById('totalInventory').textContent = totalInventory.toFixed(2);
+    document.getElementById('totalInventoryValue').textContent = `₹${totalInventoryValue.toFixed(2)}`;
+    document.getElementById('totalPurchaseOrders').textContent = totalPurchaseOrders;
+    document.getElementById('lowStockAlerts').textContent = lowStockAlerts;
+
+    const recentActivityList = document.getElementById('recentActivityList');
+    notifications.forEach(notification => {
+        const li = document.createElement('li');
+        const icon = notification.type === 'alert' ? '⚠️' : notification.type === 'inout' ? '🔄' : '✅';
+        li.innerHTML = `${icon} ${notification.message} <small>(${notification.time})</small>`;
+        recentActivityList.appendChild(li);
+    });
+
+    // Bar Chart: Rate by Category
+    const ctxBar = document.getElementById('stockChart').getContext('2d');
+    const groupedRates = {};
+    const allItems = data.map(item => item.item_name);
+
+    data.forEach(item => {
+        if (!groupedRates[item.category]) groupedRates[item.category] = [];
+        groupedRates[item.category].push({ name: item.item_name, rate: item.rate });
+    });
+
+    const datasets = Object.entries(groupedRates).map(([category, items], i) => ({
+        label: category,
+        data: allItems.map(name => {
+            const match = items.find(i => i.name === name);
+            return match ? match.rate : 0;
+        }),
+        backgroundColor: `hsl(${i * 50}, 70%, 60%)`
+    }));
+
+    new Chart(ctxBar, {
+        type: 'bar',
+        data: {
+            labels: allItems,
+            datasets: datasets
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                title: { display: true, text: 'Rate of Item by Category' },
+                legend: { position: 'bottom' }
+            },
+            scales: { y: { beginAtZero: true } }
+        }
+    });
+
+    // Pie Chart: Closing Stock
+    const ctxPie = document.getElementById('closingStockPieChart').getContext('2d');
+    new Chart(ctxPie, {
+        type: 'pie',
+        data: {
+            labels: allItems,
+            datasets: [{
+                label: 'Closing Stock',
+                data: data.map(item => item.closing),
+                backgroundColor: allItems.map((_, i) => `hsl(${i * 30}, 70%, 70%)`)
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                title: { display: true, text: 'Closing Stock Distribution by Item' },
+                legend: { position: 'bottom' }
+            }
+        }
+    });
+
+    // Line Chart: Opening vs Closing Stock
+    const ctxLine = document.getElementById('stockTrendChart').getContext('2d');
+    new Chart(ctxLine, {
+        type: 'line',
+        data: {
+            labels: allItems,
+            datasets: [
+                {
+                    label: 'Opening Stock',
+                    data: data.map(item => item.opening),
+                    borderColor: 'blue',
+                    fill: false,
+                    tension: 0.3
+                },
+                {
+                    label: 'Closing Stock',
+                    data: data.map(item => item.closing),
+                    borderColor: 'green',
+                    fill: false,
+                    tension: 0.3
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                title: { display: true, text: 'Current Stock Levels Trend (Opening vs Closing)' },
+                legend: { position: 'bottom' }
+            },
+            scales: { y: { beginAtZero: true } }
+        }
+    });
+</script>
+
+<style>
+    .container {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 24px;
+    }
+
+    .chart-container {
+        width: 48%;
+        height: 30vh;
+    }
+
+    canvas {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .stock-summary {
+        width: 52%;
+        max-height: 169px;
+        overflow-y: auto;
+        margin-right: -61px;
+    }
+
+        .stock-summary table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        .stock-summary th, .stock-summary td {
+            border: 1px solid #ddd;
+            padding: 6px 10px;
+            text-align: center;
+        }
+
+        .stock-summary th {
+            background-color: #f2f2f2;
+            position: sticky;
+            top: 0;
+        }
+
+    .bottom-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 50px;
+    }
+
+    .bottom-chart-container {
+        width: 48%;
+        height: 30vh;
+    }
+
+    .kpi-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 20px;
+        gap: 12px;
+        overflow-x: auto;
+    }
+
+    .kpi-card {
+        flex: 1;
+        min-width: 160px;
+        max-width: 200px;
+        text-align: center;
+        padding: 10px;
+        border-radius: 6px;
+        background-color: #f9f9f9;
+        box-shadow: 0 0 5px rgba(0,0,0,0.05);
+        font-size: 13px;
+    }
+
+        .kpi-card h3 {
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+    .kpi-value {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .low-stock {
+        color: red;
+    }
+
+    .recent-activity-container {
+        margin: 20px 20px;
+        padding: 20px;
+        background-color: #f7f7f7;
+        border-radius: 6px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .recent-activity-list {
+        list-style-type: none;
+        padding-left: 0;
+        font-size: 14px;
+    }
+
+        .recent-activity-list li {
+            margin: 10px 0;
+            padding: 8px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+</style>
+{% endblock %}

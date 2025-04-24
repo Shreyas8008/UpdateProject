@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+
+{% block title %}company Form{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>company Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+            /* Centering the form */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #333;
+        }
+
+        .form-grid {
+            display: grid;
+            gap: 15px;
+        }
+
+            .form-grid input[type="text"],
+            .form-grid textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                transition: border-color 0.3s;
+            }
+
+                .form-grid input:focus,
+                .form-grid textarea:focus {
+                    border-color: #007bff;
+                    outline: none;
+                    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+                }
+
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+            .button-group button,
+            .close-button {
+                padding: 12px 25px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 16px;
+                color: white;
+                text-decoration: none;
+                background: linear-gradient(to left, #6a11cb, #2575fc);
+                transition: background 0.3s, box-shadow 0.3s;
+            }
+
+                .button-group button:hover,
+                .close-button:hover {
+                    background: linear-gradient(to left, #2575fc, #6a11cb);
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Add company</h2>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="form-grid">
+                <input type="text" name="name" placeholder="company Name*" required value="{{ form.name.value|default:'' }}">
+                <input type="text" name="lst_no" placeholder="LST No" value="{{ form.lst_no.value|default:'' }}">
+                <input type="text" name="pan_no" placeholder="PAN No" value="{{ form.pan_no.value|default:'' }}">
+                <input type="text" name="cst_no" placeholder="CST No" value="{{ form.cst_no.value|default:'' }}">
+                <textarea name="company_address" placeholder="company Address">{{ form.company_address.value|default:'' }}</textarea>
+
+                <div class="button-group">
+                    <button type="submit">Save</button>
+                    <a href="{% url 'company_form' %}" class="close-button">Close</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,1142 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\Administrator_settings\\views.py||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:Administrator_settings\\views.py||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\Administrator_settings\\urls.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:Administrator_settings\\urls.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\Administrator_settings\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:Administrator_settings\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\Administrator_settings\\forms.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:Administrator_settings\\forms.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\Administrator_settings\\__init__.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:Administrator_settings\\__init__.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\Administrator_settings\\apps.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:Administrator_settings\\apps.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\forgot_password.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:master\\templates\\master\\forgot_password.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\LG\\templates\\Administrator_settings\\userrights_form.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:LG\\templates\\Administrator_settings\\userrights_form.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\LG\\templates\\Administrator_settings\\userrights_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:LG\\templates\\Administrator_settings\\userrights_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\LG\\templates\\base.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:LG\\templates\\base.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\company_form.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:master\\templates\\master\\company_form.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:master\\templates\\master\\home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:master\\templates\\master\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\views.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:master\\views.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\LG\\templates\\Administrator_settings\\user_form.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:LG\\templates\\Administrator_settings\\user_form.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\LG\\settings.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:LG\\settings.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\stock_statement\\templates\\stock_statement\\stock_statement.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:stock_statement\\templates\\stock_statement\\stock_statement.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\raw_material\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:raw_material\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\raw_material\\views.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:raw_material\\views.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\raw_material\\templates\\raw_material\\rm_material_issue_form.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:raw_material\\templates\\raw_material\\rm_material_issue_form.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\LG\\templates\\Administrator_settings\\user_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:LG\\templates\\Administrator_settings\\user_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\packing_materials\\templates\\packing_materials\\packing_material_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:packing_materials\\templates\\packing_materials\\packing_material_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\packing_materials\\templates\\packing_materials\\packing_material_form.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:packing_materials\\templates\\packing_materials\\packing_material_form.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\dashboard\\views.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:dashboard\\views.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\dashboard\\templates\\dashboard\\dashboard.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:dashboard\\templates\\dashboard\\dashboard.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\reports\\templates\\reports\\stock_dashboard.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:reports\\templates\\reports\\stock_dashboard.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\LG\\urls.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:LG\\urls.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\finished_goods\\templates\\finished_goods\\finished_inward_material_form.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:finished_goods\\templates\\finished_goods\\finished_inward_material_form.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\finished_goods\\templates\\finished_goods\\finished_inward_material_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:finished_goods\\templates\\finished_goods\\finished_inward_material_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\reports\\templates\\reports\\packing_slip_report.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:reports\\templates\\reports\\packing_slip_report.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\reports\\templates\\reports\\pm_material_issue_report.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:reports\\templates\\reports\\pm_material_issue_report.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\reports\\templates\\reports\\rm_issuance_report.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:reports\\templates\\reports\\rm_issuance_report.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\reports\\views.py||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:reports\\views.py||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\customer_detail_form.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:master\\templates\\master\\customer_detail_form.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\reports\\templates\\reports\\report.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:reports\\templates\\reports\\report.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\reports\\templates\\reports\\fg_inward_material_report.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:reports\\templates\\reports\\fg_inward_material_report.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\raw_material\\templates\\raw_material\\rm_label_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:raw_material\\templates\\raw_material\\rm_label_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:master\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\raw_material\\templates\\raw_material\\rm_material_issue_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:raw_material\\templates\\raw_material\\rm_material_issue_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\raw_material\\templates\\raw_material\\inward_material_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:raw_material\\templates\\raw_material\\inward_material_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\packing_materials\\templates\\packing_materials\\purchase_order_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:packing_materials\\templates\\packing_materials\\purchase_order_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\packing_materials\\templates\\packing_materials\\pm_material_issue_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:packing_materials\\templates\\packing_materials\\pm_material_issue_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\packing_materials\\templates\\packing_materials\\pm_label_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:packing_materials\\templates\\packing_materials\\pm_label_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\vendor_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:master\\templates\\master\\vendor_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\store_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:master\\templates\\master\\store_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\item_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:master\\templates\\master\\item_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\customer_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:master\\templates\\master\\customer_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\category_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:master\\templates\\master\\category_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\bag_boxes_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:master\\templates\\master\\bag_boxes_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\finished_goods\\templates\\finished_goods\\packing_slip_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:finished_goods\\templates\\finished_goods\\packing_slip_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\finished_goods\\templates\\finished_goods\\fg_label_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:finished_goods\\templates\\finished_goods\\fg_label_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\asset_management\\templates\\asset_management\\asset_material_issue_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:asset_management\\templates\\asset_management\\asset_material_issue_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\asset_management\\templates\\asset_management\\am_inward_material_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:asset_management\\templates\\asset_management\\am_inward_material_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\Administrator_settings\\migrations\\templates\\Administrator_settings\\user_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:Administrator_settings\\migrations\\templates\\Administrator_settings\\user_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\vendor_form.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:master\\templates\\master\\vendor_form.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\packing_materials\\templates\\packing_materials\\pm_material_issue_form.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:packing_materials\\templates\\packing_materials\\pm_material_issue_form.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\packing_materials\\templates\\packing_materials\\create_pm_label.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:packing_materials\\templates\\packing_materials\\create_pm_label.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\raw_material\\templates\\raw_material\\inward_material_form.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:raw_material\\templates\\raw_material\\inward_material_form.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\packing_materials\\views.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:packing_materials\\views.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\finished_goods\\views.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:finished_goods\\views.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\finished_goods\\templates\\finished_goods\\create_packing_slip.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:finished_goods\\templates\\finished_goods\\create_packing_slip.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\dashboard\\urls.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:dashboard\\urls.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\dashboard\\__init__.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:dashboard\\__init__.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\finished_goods\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:finished_goods\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\urls.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:master\\urls.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\stock_statement\\urls.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7477ECF9-1046-4E14-94D2-180103328AF2}|LG.pyproj|solutionrelative:stock_statement\\urls.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "company_form.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\company_form.html",
+              "RelativeDocumentMoniker": "master\\templates\\master\\company_form.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\company_form.html",
+              "RelativeToolTip": "master\\templates\\master\\company_form.html",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAUwNoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-18T04:46:32.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "models.py",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\Administrator_settings\\models.py",
+              "RelativeDocumentMoniker": "Administrator_settings\\models.py",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\Administrator_settings\\models.py",
+              "RelativeToolTip": "Administrator_settings\\models.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-04-22T05:14:35.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "urls.py",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\Administrator_settings\\urls.py",
+              "RelativeDocumentMoniker": "Administrator_settings\\urls.py",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\Administrator_settings\\urls.py",
+              "RelativeToolTip": "Administrator_settings\\urls.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-04-22T05:15:58.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "forms.py",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\Administrator_settings\\forms.py",
+              "RelativeDocumentMoniker": "Administrator_settings\\forms.py",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\Administrator_settings\\forms.py",
+              "RelativeToolTip": "Administrator_settings\\forms.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-04-22T05:14:59.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "views.py",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\Administrator_settings\\views.py",
+              "RelativeDocumentMoniker": "Administrator_settings\\views.py",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\Administrator_settings\\views.py",
+              "RelativeToolTip": "Administrator_settings\\views.py",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAAJMAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-04-17T06:24:06.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "apps.py",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\Administrator_settings\\apps.py",
+              "RelativeDocumentMoniker": "Administrator_settings\\apps.py",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\Administrator_settings\\apps.py",
+              "RelativeToolTip": "Administrator_settings\\apps.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-04-22T09:18:28.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "__init__.py (Administrator_settings)",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\Administrator_settings\\__init__.py",
+              "RelativeDocumentMoniker": "Administrator_settings\\__init__.py",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\Administrator_settings\\__init__.py",
+              "RelativeToolTip": "Administrator_settings\\__init__.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-04-22T09:18:43.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "forgot_password.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\forgot_password.html",
+              "RelativeDocumentMoniker": "master\\templates\\master\\forgot_password.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\forgot_password.html",
+              "RelativeToolTip": "master\\templates\\master\\forgot_password.html",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAqwJMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-17T05:44:07.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "base.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\LG\\templates\\base.html",
+              "RelativeDocumentMoniker": "LG\\templates\\base.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\LG\\templates\\base.html",
+              "RelativeToolTip": "LG\\templates\\base.html",
+              "ViewState": "AgIAANQCAAAAAAAAAAAqwPUCAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-17T05:15:16.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "userrights_list.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\LG\\templates\\Administrator_settings\\userrights_list.html",
+              "RelativeDocumentMoniker": "LG\\templates\\Administrator_settings\\userrights_list.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\LG\\templates\\Administrator_settings\\userrights_list.html",
+              "RelativeToolTip": "LG\\templates\\Administrator_settings\\userrights_list.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-24T09:52:59.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "userrights_form.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\LG\\templates\\Administrator_settings\\userrights_form.html",
+              "RelativeDocumentMoniker": "LG\\templates\\Administrator_settings\\userrights_form.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\LG\\templates\\Administrator_settings\\userrights_form.html",
+              "RelativeToolTip": "LG\\templates\\Administrator_settings\\userrights_form.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-24T09:53:24.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "login.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\login.html",
+              "RelativeDocumentMoniker": "master\\templates\\master\\login.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\login.html",
+              "RelativeToolTip": "master\\templates\\master\\login.html",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-19T09:59:35.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "home.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\home.html",
+              "RelativeDocumentMoniker": "master\\templates\\master\\home.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\home.html",
+              "RelativeToolTip": "master\\templates\\master\\home.html",
+              "ViewState": "AgIAAC4BAAAAAAAAAAAqwFABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-19T12:38:38.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "views.py",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\views.py",
+              "RelativeDocumentMoniker": "master\\views.py",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\views.py",
+              "RelativeToolTip": "master\\views.py",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAUwDAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-04-17T06:47:13.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "user_form.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\LG\\templates\\Administrator_settings\\user_form.html",
+              "RelativeDocumentMoniker": "LG\\templates\\Administrator_settings\\user_form.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\LG\\templates\\Administrator_settings\\user_form.html",
+              "RelativeToolTip": "LG\\templates\\Administrator_settings\\user_form.html",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAAAJkAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-17T05:42:58.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "views.py",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\raw_material\\views.py",
+              "RelativeDocumentMoniker": "raw_material\\views.py",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\raw_material\\views.py",
+              "RelativeToolTip": "raw_material\\views.py",
+              "ViewState": "AgIAAM4AAAAAAAAAAAAAANYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-04-18T10:46:34.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "settings.py",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\LG\\settings.py",
+              "RelativeDocumentMoniker": "LG\\settings.py",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\LG\\settings.py",
+              "RelativeToolTip": "LG\\settings.py",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAAAJ0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-04-21T09:57:59.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "stock_statement.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\stock_statement\\templates\\stock_statement\\stock_statement.html",
+              "RelativeDocumentMoniker": "stock_statement\\templates\\stock_statement\\stock_statement.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\stock_statement\\templates\\stock_statement\\stock_statement.html",
+              "RelativeToolTip": "stock_statement\\templates\\stock_statement\\stock_statement.html",
+              "ViewState": "AgIAALMAAAAAAAAAAADwv8UAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-21T10:38:37.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "rm_material_issue_form.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\raw_material\\templates\\raw_material\\rm_material_issue_form.html",
+              "RelativeDocumentMoniker": "raw_material\\templates\\raw_material\\rm_material_issue_form.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\raw_material\\templates\\raw_material\\rm_material_issue_form.html",
+              "RelativeToolTip": "raw_material\\templates\\raw_material\\rm_material_issue_form.html",
+              "ViewState": "AgIAALUBAAAAAAAAAAAQwNYBAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-18T10:57:31.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "packing_material_form.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\packing_materials\\templates\\packing_materials\\packing_material_form.html",
+              "RelativeDocumentMoniker": "packing_materials\\templates\\packing_materials\\packing_material_form.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\packing_materials\\templates\\packing_materials\\packing_material_form.html",
+              "RelativeToolTip": "packing_materials\\templates\\packing_materials\\packing_material_form.html",
+              "ViewState": "AgIAAPsAAAAAAAAAAAAYwAcBAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-18T10:59:09.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "models.py",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\raw_material\\models.py",
+              "RelativeDocumentMoniker": "raw_material\\models.py",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\raw_material\\models.py",
+              "RelativeToolTip": "raw_material\\models.py",
+              "ViewState": "AgIAAGQAAAAA0szMzMwHwHIAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-04-21T06:55:25.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "packing_slip_report.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\reports\\templates\\reports\\packing_slip_report.html",
+              "RelativeDocumentMoniker": "reports\\templates\\reports\\packing_slip_report.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\reports\\templates\\reports\\packing_slip_report.html",
+              "RelativeToolTip": "reports\\templates\\reports\\packing_slip_report.html",
+              "ViewState": "AgIAALoAAAAAAAAAAAAAAM8AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-19T08:03:57.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "packing_material_list.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\packing_materials\\templates\\packing_materials\\packing_material_list.html",
+              "RelativeDocumentMoniker": "packing_materials\\templates\\packing_materials\\packing_material_list.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\packing_materials\\templates\\packing_materials\\packing_material_list.html",
+              "RelativeToolTip": "packing_materials\\templates\\packing_materials\\packing_material_list.html",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAALMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-19T03:53:57.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "user_list.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\LG\\templates\\Administrator_settings\\user_list.html",
+              "RelativeDocumentMoniker": "LG\\templates\\Administrator_settings\\user_list.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\LG\\templates\\Administrator_settings\\user_list.html",
+              "RelativeToolTip": "LG\\templates\\Administrator_settings\\user_list.html",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAAAF4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-19T04:05:18.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "views.py",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\dashboard\\views.py",
+              "RelativeDocumentMoniker": "dashboard\\views.py",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\dashboard\\views.py",
+              "RelativeToolTip": "dashboard\\views.py",
+              "ViewState": "AgIAABkAAAAAAAAAAAAhwCkAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-04-18T09:19:52.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "dashboard.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\dashboard\\templates\\dashboard\\dashboard.html",
+              "RelativeDocumentMoniker": "dashboard\\templates\\dashboard\\dashboard.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\dashboard\\templates\\dashboard\\dashboard.html",
+              "RelativeToolTip": "dashboard\\templates\\dashboard\\dashboard.html",
+              "ViewState": "AgIAACMBAAAAAAAAAAAYwEoBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-18T09:22:59.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "stock_dashboard.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\reports\\templates\\reports\\stock_dashboard.html",
+              "RelativeDocumentMoniker": "reports\\templates\\reports\\stock_dashboard.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\reports\\templates\\reports\\stock_dashboard.html",
+              "RelativeToolTip": "reports\\templates\\reports\\stock_dashboard.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-19T08:07:18.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "urls.py",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\LG\\urls.py",
+              "RelativeDocumentMoniker": "LG\\urls.py",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\LG\\urls.py",
+              "RelativeToolTip": "LG\\urls.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-04-18T09:23:39.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "finished_inward_material_form.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\finished_goods\\templates\\finished_goods\\finished_inward_material_form.html",
+              "RelativeDocumentMoniker": "finished_goods\\templates\\finished_goods\\finished_inward_material_form.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\finished_goods\\templates\\finished_goods\\finished_inward_material_form.html",
+              "RelativeToolTip": "finished_goods\\templates\\finished_goods\\finished_inward_material_form.html",
+              "ViewState": "AgIAAOYAAAAAAAAAAAAYwPwAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-18T11:01:50.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "finished_inward_material_list.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\finished_goods\\templates\\finished_goods\\finished_inward_material_list.html",
+              "RelativeDocumentMoniker": "finished_goods\\templates\\finished_goods\\finished_inward_material_list.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\finished_goods\\templates\\finished_goods\\finished_inward_material_list.html",
+              "RelativeToolTip": "finished_goods\\templates\\finished_goods\\finished_inward_material_list.html",
+              "ViewState": "AgIAALQAAAAAAAAAAAAAAMYAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-19T06:28:46.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "pm_material_issue_report.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\reports\\templates\\reports\\pm_material_issue_report.html",
+              "RelativeDocumentMoniker": "reports\\templates\\reports\\pm_material_issue_report.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\reports\\templates\\reports\\pm_material_issue_report.html",
+              "RelativeToolTip": "reports\\templates\\reports\\pm_material_issue_report.html",
+              "ViewState": "AgIAAL4AAAAAAAAAAAAQwN8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-19T08:04:21.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "rm_issuance_report.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\reports\\templates\\reports\\rm_issuance_report.html",
+              "RelativeDocumentMoniker": "reports\\templates\\reports\\rm_issuance_report.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\reports\\templates\\reports\\rm_issuance_report.html",
+              "RelativeToolTip": "reports\\templates\\reports\\rm_issuance_report.html",
+              "ViewState": "AgIAAMEAAAAAAAAAAAAQwOIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-19T08:07:14.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "customer_detail_form.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\customer_detail_form.html",
+              "RelativeDocumentMoniker": "master\\templates\\master\\customer_detail_form.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\customer_detail_form.html",
+              "RelativeToolTip": "master\\templates\\master\\customer_detail_form.html",
+              "ViewState": "AgIAAA4BAAAAAAAAAAAQwBgBAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-17T05:51:30.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "views.py",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\reports\\views.py",
+              "RelativeDocumentMoniker": "reports\\views.py",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\reports\\views.py",
+              "RelativeToolTip": "reports\\views.py",
+              "ViewState": "AgIAAMgBAAAAAAAAAAAhwNgBAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-04-19T07:12:34.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "fg_inward_material_report.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\reports\\templates\\reports\\fg_inward_material_report.html",
+              "RelativeDocumentMoniker": "reports\\templates\\reports\\fg_inward_material_report.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\reports\\templates\\reports\\fg_inward_material_report.html",
+              "RelativeToolTip": "reports\\templates\\reports\\fg_inward_material_report.html",
+              "ViewState": "AgIAAL4AAAAAAAAAAAAQwN8AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-19T08:03:18.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "report.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\reports\\templates\\reports\\report.html",
+              "RelativeDocumentMoniker": "reports\\templates\\reports\\report.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\reports\\templates\\reports\\report.html",
+              "RelativeToolTip": "reports\\templates\\reports\\report.html",
+              "ViewState": "AgIAAMIAAAAAAAAAAAAQwOMAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-19T06:38:12.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "rm_label_list.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\raw_material\\templates\\raw_material\\rm_label_list.html",
+              "RelativeDocumentMoniker": "raw_material\\templates\\raw_material\\rm_label_list.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\raw_material\\templates\\raw_material\\rm_label_list.html",
+              "RelativeToolTip": "raw_material\\templates\\raw_material\\rm_label_list.html",
+              "ViewState": "AgIAAMwAAAAAAAAAAAAAANQAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-19T06:35:42.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "inward_material_list.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\raw_material\\templates\\raw_material\\inward_material_list.html",
+              "RelativeDocumentMoniker": "raw_material\\templates\\raw_material\\inward_material_list.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\raw_material\\templates\\raw_material\\inward_material_list.html",
+              "RelativeToolTip": "raw_material\\templates\\raw_material\\inward_material_list.html",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAAALMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-19T06:35:28.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "models.py",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\models.py",
+              "RelativeDocumentMoniker": "master\\models.py",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\models.py",
+              "RelativeToolTip": "master\\models.py",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-04-18T04:04:20.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "rm_material_issue_list.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\raw_material\\templates\\raw_material\\rm_material_issue_list.html",
+              "RelativeDocumentMoniker": "raw_material\\templates\\raw_material\\rm_material_issue_list.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\raw_material\\templates\\raw_material\\rm_material_issue_list.html",
+              "RelativeToolTip": "raw_material\\templates\\raw_material\\rm_material_issue_list.html",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAAANMAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-19T06:35:53.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "purchase_order_list.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\packing_materials\\templates\\packing_materials\\purchase_order_list.html",
+              "RelativeDocumentMoniker": "packing_materials\\templates\\packing_materials\\purchase_order_list.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\packing_materials\\templates\\packing_materials\\purchase_order_list.html",
+              "RelativeToolTip": "packing_materials\\templates\\packing_materials\\purchase_order_list.html",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAAALQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-19T06:35:14.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "pm_material_issue_list.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\packing_materials\\templates\\packing_materials\\pm_material_issue_list.html",
+              "RelativeDocumentMoniker": "packing_materials\\templates\\packing_materials\\pm_material_issue_list.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\packing_materials\\templates\\packing_materials\\pm_material_issue_list.html",
+              "RelativeToolTip": "packing_materials\\templates\\packing_materials\\pm_material_issue_list.html",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAAALIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-19T06:35:02.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "pm_label_list.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\packing_materials\\templates\\packing_materials\\pm_label_list.html",
+              "RelativeDocumentMoniker": "packing_materials\\templates\\packing_materials\\pm_label_list.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\packing_materials\\templates\\packing_materials\\pm_label_list.html",
+              "RelativeToolTip": "packing_materials\\templates\\packing_materials\\pm_label_list.html",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAAALsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-19T06:34:48.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "vendor_list.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\vendor_list.html",
+              "RelativeDocumentMoniker": "master\\templates\\master\\vendor_list.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\vendor_list.html",
+              "RelativeToolTip": "master\\templates\\master\\vendor_list.html",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAAALQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-19T06:34:18.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "store_list.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\store_list.html",
+              "RelativeDocumentMoniker": "master\\templates\\master\\store_list.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\store_list.html",
+              "RelativeToolTip": "master\\templates\\master\\store_list.html",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAAALMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-19T06:34:05.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "item_list.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\item_list.html",
+              "RelativeDocumentMoniker": "master\\templates\\master\\item_list.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\item_list.html",
+              "RelativeToolTip": "master\\templates\\master\\item_list.html",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAAALIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-19T06:33:51.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "customer_list.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\customer_list.html",
+              "RelativeDocumentMoniker": "master\\templates\\master\\customer_list.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\customer_list.html",
+              "RelativeToolTip": "master\\templates\\master\\customer_list.html",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAAALQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-19T06:33:36.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "category_list.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\category_list.html",
+              "RelativeDocumentMoniker": "master\\templates\\master\\category_list.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\category_list.html",
+              "RelativeToolTip": "master\\templates\\master\\category_list.html",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAAALQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-19T06:33:03.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "bag_boxes_list.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\bag_boxes_list.html",
+              "RelativeDocumentMoniker": "master\\templates\\master\\bag_boxes_list.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\bag_boxes_list.html",
+              "RelativeToolTip": "master\\templates\\master\\bag_boxes_list.html",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAAALMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-19T06:32:16.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "packing_slip_list.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\finished_goods\\templates\\finished_goods\\packing_slip_list.html",
+              "RelativeDocumentMoniker": "finished_goods\\templates\\finished_goods\\packing_slip_list.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\finished_goods\\templates\\finished_goods\\packing_slip_list.html",
+              "RelativeToolTip": "finished_goods\\templates\\finished_goods\\packing_slip_list.html",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAAAK4AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-19T06:29:52.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "fg_label_list.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\finished_goods\\templates\\finished_goods\\fg_label_list.html",
+              "RelativeDocumentMoniker": "finished_goods\\templates\\finished_goods\\fg_label_list.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\finished_goods\\templates\\finished_goods\\fg_label_list.html",
+              "RelativeToolTip": "finished_goods\\templates\\finished_goods\\fg_label_list.html",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAAAK8AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-19T06:27:41.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "asset_material_issue_list.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\asset_management\\templates\\asset_management\\asset_material_issue_list.html",
+              "RelativeDocumentMoniker": "asset_management\\templates\\asset_management\\asset_material_issue_list.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\asset_management\\templates\\asset_management\\asset_material_issue_list.html",
+              "RelativeToolTip": "asset_management\\templates\\asset_management\\asset_material_issue_list.html",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAAAKwAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-19T06:26:34.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "am_inward_material_list.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\asset_management\\templates\\asset_management\\am_inward_material_list.html",
+              "RelativeDocumentMoniker": "asset_management\\templates\\asset_management\\am_inward_material_list.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\asset_management\\templates\\asset_management\\am_inward_material_list.html",
+              "RelativeToolTip": "asset_management\\templates\\asset_management\\am_inward_material_list.html",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAAAKoAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-19T06:24:27.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "user_list.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\Administrator_settings\\migrations\\templates\\Administrator_settings\\user_list.html",
+              "RelativeDocumentMoniker": "Administrator_settings\\migrations\\templates\\Administrator_settings\\user_list.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\Administrator_settings\\migrations\\templates\\Administrator_settings\\user_list.html",
+              "RelativeToolTip": "Administrator_settings\\migrations\\templates\\Administrator_settings\\user_list.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-19T06:24:22.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "pm_material_issue_form.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\packing_materials\\templates\\packing_materials\\pm_material_issue_form.html",
+              "RelativeDocumentMoniker": "packing_materials\\templates\\packing_materials\\pm_material_issue_form.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\packing_materials\\templates\\packing_materials\\pm_material_issue_form.html",
+              "RelativeToolTip": "packing_materials\\templates\\packing_materials\\pm_material_issue_form.html",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAAAMYBAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-18T10:59:21.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "vendor_form.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\vendor_form.html",
+              "RelativeDocumentMoniker": "master\\templates\\master\\vendor_form.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\templates\\master\\vendor_form.html",
+              "RelativeToolTip": "master\\templates\\master\\vendor_form.html",
+              "ViewState": "AgIAAAEBAAAAAAAAAAAlwAsBAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-17T12:15:11.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "create_pm_label.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\packing_materials\\templates\\packing_materials\\create_pm_label.html",
+              "RelativeDocumentMoniker": "packing_materials\\templates\\packing_materials\\create_pm_label.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\packing_materials\\templates\\packing_materials\\create_pm_label.html",
+              "RelativeToolTip": "packing_materials\\templates\\packing_materials\\create_pm_label.html",
+              "ViewState": "AgIAAL0AAAAAAAAAAAAAAMwAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-19T03:59:14.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "inward_material_form.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\raw_material\\templates\\raw_material\\inward_material_form.html",
+              "RelativeDocumentMoniker": "raw_material\\templates\\raw_material\\inward_material_form.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\raw_material\\templates\\raw_material\\inward_material_form.html",
+              "RelativeToolTip": "raw_material\\templates\\raw_material\\inward_material_form.html",
+              "ViewState": "AgIAABQBAAAAAAAAAAAAABQBAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-18T10:48:31.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "views.py",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\packing_materials\\views.py",
+              "RelativeDocumentMoniker": "packing_materials\\views.py",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\packing_materials\\views.py",
+              "RelativeToolTip": "packing_materials\\views.py",
+              "ViewState": "AgIAAF4CAAAAAAAAAAAAwIMCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-04-18T10:58:36.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "views.py",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\finished_goods\\views.py",
+              "RelativeDocumentMoniker": "finished_goods\\views.py",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\finished_goods\\views.py",
+              "RelativeToolTip": "finished_goods\\views.py",
+              "ViewState": "AgIAAA8CAAAAAAAAAAAAwDQCAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-04-18T10:59:46.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "create_packing_slip.html",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\finished_goods\\templates\\finished_goods\\create_packing_slip.html",
+              "RelativeDocumentMoniker": "finished_goods\\templates\\finished_goods\\create_packing_slip.html",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\finished_goods\\templates\\finished_goods\\create_packing_slip.html",
+              "RelativeToolTip": "finished_goods\\templates\\finished_goods\\create_packing_slip.html",
+              "ViewState": "AgIAAG0CAAAAAAAAAAAQwI4CAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-18T11:04:22.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "__init__.py (dashboard)",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\dashboard\\__init__.py",
+              "RelativeDocumentMoniker": "dashboard\\__init__.py",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\dashboard\\__init__.py",
+              "RelativeToolTip": "dashboard\\__init__.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-04-18T09:19:37.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "models.py",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\finished_goods\\models.py",
+              "RelativeDocumentMoniker": "finished_goods\\models.py",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\finished_goods\\models.py",
+              "RelativeToolTip": "finished_goods\\models.py",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAEQAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-04-18T09:11:20.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "urls.py",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\dashboard\\urls.py",
+              "RelativeDocumentMoniker": "dashboard\\urls.py",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\dashboard\\urls.py",
+              "RelativeToolTip": "dashboard\\urls.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-04-18T09:22:16.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "urls.py",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\urls.py",
+              "RelativeDocumentMoniker": "master\\urls.py",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\master\\urls.py",
+              "RelativeToolTip": "master\\urls.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-04-17T11:32:03.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "urls.py",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\stock_statement\\urls.py",
+              "RelativeDocumentMoniker": "stock_statement\\urls.py",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Demo\\LG_sat\\LG_sat\\LG\\stock_statement\\urls.py",
+              "RelativeToolTip": "stock_statement\\urls.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-04-16T12:18:14.356Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

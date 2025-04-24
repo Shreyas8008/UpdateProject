@@ -1,0 +1,165 @@
+{% extends 'base.html' %}
+
+{% block title %}Add Item{% endblock %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Item</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 800px;
+        }
+
+        h2 {
+            text-align: left;
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #333;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+            .form-grid input[type="text"],
+            .form-grid input[type="email"],
+            .form-grid input[type="number"],
+            .form-grid textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                transition: border-color 0.3s;
+            }
+
+                .form-grid input:focus,
+                .form-grid textarea:focus {
+                    border-color: #007bff;
+                    outline: none;
+                    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+                }
+
+            .form-grid textarea {
+                grid-column: span 2;
+                resize: vertical;
+                min-height: 100px;
+            }
+
+        .full-width {
+            grid-column: span 2;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            grid-column: span 2;
+        }
+
+            .button-group button,
+            .close-button {
+                padding: 12px 25px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 16px;
+                color: white;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: linear-gradient(to left, #6a11cb, #2575fc); /* Purple to Light Blue */
+                transition: background 0.3s, box-shadow 0.3s;
+            }
+
+                .button-group button:hover,
+                .close-button:hover {
+                    background: linear-gradient(to left, #2575fc, #6a11cb); /* Reverse gradient */
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                }
+
+        #bom-section {
+            display: none;
+            grid-column: span 2;
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+            #bom-section h3 {
+                margin-top: 0;
+            }
+    </style>
+
+</head>
+<body>
+    <div class="form-container">
+        <h2>{{ title }}</h2>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="form-grid">
+                <input type="text" name="item_code" placeholder="Item Code*" required value="{{ form.item_code.value|default:'' }}">
+                <input type="text" name="item_name" placeholder="Item Name*" required value="{{ form.item_name.value|default:'' }}">
+                <input type="text" name="rack_no" placeholder="Rack No" value="{{ form.rack_no.value|default:'' }}">
+                <input type="text" name="rol" placeholder="ROL" value="{{ form.rol.value|default:'' }}">
+
+                <input type="text" name="rate" placeholder="Rate" value="{{ form.rate.value|default:'' }}">
+
+                <input type="text" name="grade" placeholder="Grade" value="{{ form.grade.value|default:'' }}">
+
+                <input type="text" name="molqty" placeholder="MOL Qty" value="{{ form.molqty.value|default:'' }}">
+                <input type="text" name="hsncode" placeholder="HSN Code" value="{{ form.hsncode.value|default:'' }}">
+                <input type="text" name="packingqty" placeholder="Packing Qty" value="{{ form.packingqty.value|default:'' }}">
+
+                <textarea name="remarks" placeholder="Remarks">{{ form.remarks.value|default:'' }}</textarea>
+                <select name="category" required>
+                    <option value="">Select Category</option>
+                    {% for category in form.category.field.queryset %}
+                    <option value="{{ category.id }}" {% if form.category.value == category.id %}selected{% endif %}>
+                        {{ category.name }}
+                    </option>
+                    {% endfor %}
+                </select>
+
+                <div class="button-group full-width">
+                    {% if not view_mode %}
+                    <button type="submit">
+                        {% if request.resolver_match.url_name == 'item_edit' %} Update {% else %} Save {% endif %}
+                    </button>
+                    {% endif %}
+
+                    <a href="{% url 'item_list' %}" class="close-button">Close</a>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
+{% endblock %}

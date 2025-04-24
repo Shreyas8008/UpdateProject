@@ -1,0 +1,389 @@
+{% extends 'base.html' %}
+
+{% block title %}Company Form{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 100px;
+            box-sizing: border-box;
+        }
+
+        .form-container {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 600px;
+            animation: fadeIn 0.5s ease;
+            border: 2px solid transparent;
+            background-clip: padding-box, border-box;
+            background-origin: border-box;
+            background-image: linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(45deg, #0077b6, #0096c7);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h4 {
+            text-align: left;
+            margin-bottom: 8px;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+        }
+
+            /* Smaller input and textarea styles */
+            .form-grid input[type="text"],
+            .form-grid input[type="email"],
+            .form-grid input[type="number"],
+            .form-grid textarea {
+                width: 100%;
+                padding: 1px 2px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                transition: border-color 0.3s;
+                font-size: 9px;
+            }
+
+            .form-grid input[type="email"],
+            .form-grid input[type="text"] {
+                height: 28px;
+            }
+
+            .form-grid .address {
+                height: 28px;
+                font-size: 11px;
+                resize: none;
+            }
+
+        .button-group {
+            grid-column: span 3;
+            display: flex;
+            justify-content: flex-end;
+            gap: 6px;
+            margin-top: 12px;
+            font-size: 10px;
+            font-weight: 100;
+        }
+
+            /* Smaller button styles */
+            .button-group button {
+                padding: 6px 10px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 10px;
+                font-weight: 100;
+                color: white;
+                background: linear-gradient(45deg, #0077b6, #0096c7);
+                transition: background 0.3s, box-shadow 0.3s;
+            }
+
+                .button-group button:hover {
+                    background: linear-gradient(45deg, #005f86, #0077b6);
+                    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+                }
+
+        /* Corrected close button styles */
+        .close-button {
+            padding: 6px 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 10px;
+            font-weight: 100;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            background: linear-gradient(45deg, #0077b6, #0096c7);
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+
+            .close-button:hover {
+                background: linear-gradient(45deg, #9d0208, #6a040f);
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+            }
+
+        @media (max-width: 600px) {
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .button-group {
+                flex-direction: column;
+                gap: 6px;
+                justify-content: center;
+            }
+        }
+        /* Style for invalid fields after submit */
+        .invalid {
+            border-color: red !important;
+        }
+
+            .invalid::placeholder {
+                color: red !important;
+            }
+
+        .error-message {
+            color: red;
+            display: none;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h6 style="color: black; font-size: 12px; font-weight: 100;"> Add Company Details</h6>
+        <form id="companyForm" method="POST" novalidate>
+            {% csrf_token %}
+            <div class="form-grid">
+                <input id="name" type="text" name="name" placeholder="Company Name*" required value="{{ form.name.value|default:'' }}">
+                <input id="lst_no" type="text" name="lst_no" placeholder="LST No*" required value="{{ form.lst_no.value|default:'' }}">
+                <div>
+                    <div id="pan-error" class="error-message">PAN should be in uppercase (e.g., ABCDE1234F)</div>
+                    <input id="pan_no"
+                           type="text"
+                           name="pan_no"
+                           placeholder="PAN No*"
+                           required value="{{ form.pan_no.value|default:'' }}"
+                           oninput="validatePAN()"
+                           onfocus="showExample()"
+                           onblur="hideExample()">
+                </div>
+                <input id="cst_no" type="text" name="cst_no" placeholder="CST No*" required value="{{ form.cst_no.value|default:'' }}">
+                <textarea name="company_address" placeholder="Company Address*" required>{{ form.company_address.value|default:'' }}</textarea>
+
+                <div class="button-group">
+                    <button type="submit">Save</button>
+                    <!-- <a href="{% url 'company_form' %}" class="close-button">Close</a>-->
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- Snackbar -->
+    <div id="snackbar">Company details saved</div>
+
+    <style>
+        /* Add your existing styles here ... */
+
+        /* Snackbar Style */
+        #snackbar {
+            visibility: hidden;
+            min-width: 250px;
+            background: linear-gradient(135deg, #ff00cc, #3333ff); /* 🔥 Gradient */
+            color: #fff;
+            text-align: center;
+            border-radius: 4px;
+            padding: 12px;
+            position: fixed;
+            z-index: 1000;
+            left: 50%;
+            bottom: 30px;
+            font-size: 14px;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+            #snackbar.show {
+                visibility: visible;
+                animation: fadein 0.5s, fadeout 0.5s 2.5s;
+            }
+
+        @keyframes fadein {
+            from {
+                bottom: 0;
+                opacity: 0;
+            }
+
+            to {
+                bottom: 30px;
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeout {
+            from {
+                bottom: 30px;
+                opacity: 1;
+            }
+
+            to {
+                bottom: 0;
+                opacity: 0;
+            }
+        }
+
+        .invalid {
+            border-color: red !important;
+            background-color: #fff0f0;
+        }
+
+            .invalid::placeholder {
+                color: red !important;
+            }
+
+        /* Style for invalid fields after submit */
+        .invalid {
+            border-color: red !important;
+            background-color: #fff0f0 !important; /* Light red background for invalid fields */
+        }
+
+            .invalid::placeholder {
+                color: red !important; /* Change placeholder color to red */
+            }
+
+            /* Style for textarea when invalid */
+            .invalid textarea {
+                border-color: red !important;
+                background-color: #fff0f0 !important;
+            }
+
+
+    </style>
+
+    <script>
+        function showSnackbar(message) {
+            const snackbar = document.getElementById("snackbar");
+            snackbar.textContent = message;
+            snackbar.className = "show";
+            setTimeout(() => {
+                snackbar.className = snackbar.className.replace("show", "");
+            }, 3000);
+        }
+
+        function validatePAN() {
+            const panInput = document.getElementById("pan_no");
+            const errorDiv = document.getElementById("pan-error");
+            const panValue = panInput.value.toUpperCase();
+
+            panInput.value = panValue;
+            const panRegex = /^[A-Z]{5}[0-9]{4}[A-Z]$/;
+
+            if (panValue && !panRegex.test(panValue)) {
+                errorDiv.style.display = "block";
+            } else {
+                errorDiv.style.display = "none";
+            }
+        }
+
+        function showExample() {
+            const errorDiv = document.getElementById("pan-error");
+            if (!document.getElementById("pan_no").value) {
+                errorDiv.textContent = "Example PAN: ABCDE1234F";
+                errorDiv.style.display = "block";
+            }
+        }
+
+        function hideExample() {
+            const errorDiv = document.getElementById("pan-error");
+            if (!document.getElementById("pan_no").value) {
+                errorDiv.style.display = "none";
+            } else {
+                validatePAN();
+            }
+        }
+
+        // AJAX Submit
+        document.getElementById("companyForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            const form = this;
+            const formData = new FormData(form);
+
+            let valid = true;
+            const inputs = form.querySelectorAll("input[required], textarea[required]");
+
+            // Clear previous error states
+            inputs.forEach(input => {
+                input.classList.remove("invalid");
+                if (input.nextElementSibling && input.nextElementSibling.classList.contains("field-error")) {
+                    input.nextElementSibling.remove();
+                }
+            });
+
+            // Check for empty fields and only add red border indication
+            inputs.forEach(input => {
+                if (!input.value.trim()) {
+                    input.classList.add("invalid");  // Add red border via CSS
+                    valid = false;
+                } else {
+                    input.classList.remove("invalid");  // Remove red border if value is filled
+                }
+            });
+
+            // Check if there are any invalid fields
+            if (!valid) {
+                showSnackbar("Please fill all required fields.");
+                return;
+            }
+
+            // Proceed with AJAX if valid
+            fetch("", {
+                method: "POST",
+                body: formData,
+                headers: {
+                    "X-CSRFToken": form.querySelector("[name=csrfmiddlewaretoken]").value
+                }
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        showSnackbar("Company details saved!");
+                        form.reset();
+                        triggerSidebar();
+                    } else {
+                        showSnackbar("Failed to save. Please fill all required fields.");
+                    }
+                })
+                .catch(error => {
+                    console.error("Error:", error);
+                    showSnackbar("Something went wrong.");
+                });
+        });
+
+
+
+        function triggerSidebar() {
+            // This function should simulate sidebar opening
+            // Replace with your actual sidebar trigger logic
+            const sidebar = document.querySelector(".sidebar"); // Adjust selector as per your layout
+            if (sidebar) {
+                sidebar.classList.add("active"); // Example: add active class
+            }
+        }
+    </script>
+</body>
+    {% endblock %}

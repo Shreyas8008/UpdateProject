@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+
+{% block title %}Vendor List{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Category</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 600px;
+        }
+
+        h2 {
+            text-align: left;
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #333;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+            .form-grid input[type="text"] {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                transition: border-color 0.3s;
+            }
+
+            .form-grid input:focus {
+                border-color: #007bff;
+                outline: none;
+                box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+            }
+
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+        }
+
+            .button-group button,
+            .close-button {
+                padding: 12px 25px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 16px;
+                color: white;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: linear-gradient(to left, #6a11cb, #2575fc);
+                transition: background 0.3s, box-shadow 0.3s;
+            }
+
+                .button-group button:hover,
+                .close-button:hover {
+                    background: linear-gradient(to left, #2575fc, #6a11cb);
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>{{ title }}</h2>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="form-grid">
+                <!--<input type="text" name="sl_no" placeholder="Sl No*" required value="{{ form.sl_no.value|default:'' }}">-->
+                <input type="text" name="name" placeholder="Name*" required value="{{ form.name.value|default:'' }}">
+                <input type="text" name="description" placeholder="Description" value="{{ form.description.value|default:'' }}">
+                <input type="text" name="remarks" placeholder="Remarks" value="{{ form.remarks.value|default:'' }}">
+
+                <div class="button-group">
+                    {% if not view_mode %}
+                    <button type="submit">
+                        {% if request.resolver_match.url_name == 'category_edit' %} Update {% else %} Save {% endif %}
+                    </button>
+                    {% endif %}
+
+                    <a href="{% url 'category_list' %}" class="close-button">Close</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+{% endblock %}

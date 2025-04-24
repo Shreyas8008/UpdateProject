@@ -1,0 +1,193 @@
+{% extends 'base.html' %}
+
+{% block title %}Customer List{% endblock %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Customer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 100px;
+            box-sizing: border-box;
+        }
+
+        .form-container {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 600px;
+            animation: fadeIn 0.5s ease;
+            border: 2px solid transparent;
+            background-clip: padding-box, border-box;
+            background-origin: border-box;
+            background-image: linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(45deg, #0077b6, #0096c7);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h4 {
+            text-align: left;
+            margin-bottom: 8px;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+        }
+
+            /* Smaller input and textarea styles */
+            .form-grid input[type="text"],
+            .form-grid input[type="email"],
+            .form-grid input[type="number"],
+            .form-grid textarea {
+                width: 100%;
+                padding: 1px 2px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                transition: border-color 0.3s;
+                font-size: 9px;
+            }
+
+            .form-grid input[type="email"],
+            .form-grid input[type="text"] {
+                height: 28px;
+            }
+
+            .form-grid .address {
+                height: 28px;
+                font-size: 11px;
+                resize: none;
+            }
+
+        .button-group {
+            grid-column: span 3;
+            display: flex;
+            justify-content: flex-end;
+            gap: 6px;
+            margin-top: 12px;
+            font-size: 10px;
+            font-weight: 100;
+        }
+
+            /* Smaller button styles */
+            .button-group button {
+                padding: 6px 10px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 10px;
+                font-weight: 100;
+                color: white;
+                background: linear-gradient(45deg, #0077b6, #0096c7);
+                transition: background 0.3s, box-shadow 0.3s;
+            }
+
+                .button-group button:hover {
+                    background: linear-gradient(45deg, #005f86, #0077b6);
+                    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+                }
+
+        /* Corrected close button styles */
+        .close-button {
+            padding: 6px 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 10px;
+            font-weight: 100;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            background: linear-gradient(45deg, #0077b6, #0096c7);
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+
+            .close-button:hover {
+                background: linear-gradient(45deg, #9d0208, #6a040f);
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+            }
+
+        @media (max-width: 600px) {
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .button-group {
+                flex-direction: column;
+                gap: 6px;
+                justify-content: center;
+            }
+        }
+        /* Style for invalid fields after submit */
+        .invalid {
+            border-color: red !important;
+        }
+
+            .invalid::placeholder {
+                color: red !important;
+            }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>{% if form.instance.pk %}Edit{% else %}New{% endif %} Purchase Order</h1>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+
+            {% for field in form %}
+            <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+
+            {% if field.name == "po_date" %}
+            <input type="date" name="{{ field.name }}" id="{{ field.id_for_label }}"
+                   value="{% if field.value %}{{ field.value|date:'Y-m-d' }}{% endif %}">
+            {% else %}
+            {{ field }}
+            {% endif %}
+
+            {% if field.errors %}
+            <div style="color: red;">{{ field.errors }}</div>
+            {% endif %}
+            {% endfor %}
+
+            <div class="button-group">
+                <button type="submit">Save</button>
+                <a href="{% url 'purchase_order_list' %}" class="close-button">Back</a>
+            </div>
+
+        </form>
+
+        <!-- Add a Back Link -->
+    </div>
+
+</body>
+</html>
+{% endblock %}
+

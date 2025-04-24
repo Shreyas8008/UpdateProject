@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block title %}FG Label Details{% endblock %}
+
+{% block content %}
+<style>
+    .label-container {
+        max-width: 600px;
+        margin: 40px auto;
+        background: #f9f9f9;
+        padding: 20px 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+    }
+
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+
+    .label-details {
+        margin-top: 20px;
+    }
+
+        .label-details dt {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .label-details dd {
+            margin-left: 0;
+            margin-bottom: 10px;
+        }
+
+    .back-btn {
+        display: block;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+        .back-btn a {
+            background: linear-gradient(45deg, #0077b6, #0096c7);
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: 0.3s ease;
+        }
+
+            .back-btn a:hover {
+                background: linear-gradient(45deg, #005f86, #0077b6);
+            }
+</style>
+
+<div class="label-container">
+    <h2>FG Label Details</h2>
+    <dl class="label-details">
+        <dt>Item Code:</dt>
+        <dd>{{ fg_label.item_code }}</dd>
+
+        <dt>Item Name:</dt>
+        <dd>{{ fg_label.item_name }}</dd>
+
+        <dt>Batch No:</dt>
+        <dd>{{ fg_label.batch_no }}</dd>
+
+        <dt>Packing Quantity:</dt>
+        <dd>{{ fg_label.packing_qty }}</dd>
+
+        <dt>Number of Bags:</dt>
+        <dd>{{ fg_label.no_of_bags }}</dd>
+
+        <dt>Next Bag No:</dt>
+        <dd>{{ fg_label.next_bag_no }}</dd>
+
+        <dt>Date of Packing:</dt>
+        <dd>{{ fg_label.date_of_packing }}</dd>
+
+        <dt>Date of Expiry:</dt>
+        <dd>{{ fg_label.date_of_expiry }}</dd>
+    </dl>
+
+    <div class="back-btn">
+        <a href="{% url 'fg_label_list' %}">Back to List</a>
+    </div>
+</div>
+{% endblock %}

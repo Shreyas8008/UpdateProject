@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+
+{% block title %}Add Vendor{% endblock %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Vendor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 800px;
+        }
+
+        h2 {
+            text-align: left;
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #333;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+            .form-grid input[type="text"],
+            .form-grid input[type="email"],
+            .form-grid input[type="number"],
+            .form-grid textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                transition: border-color 0.3s;
+            }
+
+                .form-grid input:focus,
+                .form-grid textarea:focus {
+                    border-color: #007bff;
+                    outline: none;
+                    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+                }
+
+            .form-grid textarea {
+                grid-column: span 2;
+                resize: vertical;
+                min-height: 100px;
+            }
+
+        .full-width {
+            grid-column: span 2;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            grid-column: span 2;
+        }
+
+            .button-group button,
+            .close-button {
+                padding: 12px 25px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 16px;
+                color: white;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: linear-gradient(to left, #6a11cb, #2575fc); /* Purple to Light Blue */
+                transition: background 0.3s, box-shadow 0.3s;
+            }
+
+                .button-group button:hover,
+                .close-button:hover {
+                    background: linear-gradient(to left, #2575fc, #6a11cb); /* Reverse gradient */
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>{{ title }}</h2>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="form-grid">
+                <input type="text" name="vendor_code" placeholder="Vendor Code*" required value="{{ form.vendor_code.value|default:'' }}">
+                <input type="text" name="vendor_name" placeholder="Vendor Name*" required value="{{ form.vendor_name.value|default:'' }}">
+                <input type="text" name="contact_person" placeholder="Contact Person" value="{{ form.contact_person.value|default:'' }}">
+                <input type="text" name="tel_no" placeholder="Tel No*" required value="{{ form.tel_no.value|default:'' }}">
+                <input type="email" name="email" placeholder="Email" value="{{ form.email.value|default:'' }}">
+                <input type="text" name="gst_no" placeholder="GST No" value="{{ form.gst_no.value|default:'' }}">
+                <textarea name="address" placeholder="Address">{{ form.address.value|default:'' }}</textarea>
+
+                <div class="button-group full-width">
+                    {% if not view_mode %}
+                    <button type="submit">
+                        {% if request.resolver_match.url_name == 'vendor_edit' %} Update {% else %} Save {% endif %}
+                    </button>
+                    {% endif %}
+
+                    <a href="{% url 'vendor_list' %}" class="close-button">Close</a>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+{% endblock %}

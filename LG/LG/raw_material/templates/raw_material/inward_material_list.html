@@ -1,0 +1,250 @@
+{% extends 'base.html' %}
+
+{% block title %}Inward Material List{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="header-container">
+        <h2>Inward Material List</h2>
+        <a href="{% url 'inward_material_add' %}" class="add-button">+ Add inward material</a>
+    </div>
+
+    <table>
+        <tr>
+            <th>SL NO</th>
+            <th>Invoice No</th>
+            <th>Invoice Date</th>
+            <th>GRN Date</th>
+            <th>Vendor Name</th>
+            <th>PO No</th>
+            <th>Actions</th>
+        </tr>
+        {% for material in inward_materials %}
+        <tr>
+            <td>{{ forloop.counter }}</td>
+            <td>{{ material.invoice_no }}</td>
+            <td>{{ material.invoice_date }}</td>
+            <td>{{ material.grn_date }}</td>
+            <td>{{ material.vendor.vendor_name|default:"N/A" }}</td>
+            <td>{{ material.po_no }}</td>
+            <td class="action-buttons">
+                <!-- View button link -->
+                <a href="{% url 'inward_material_view' material.id %}" class="btn-view" title="View InwardMaterial">
+                    <i class="fa-solid fa-eye"></i>view
+                </a>
+                <!-- Edit button link -->
+                <a href="{% url 'inward_material_edit' material.id %}" class="btn-edit" title="Edit Inward Material">
+                    <i class="fa-solid fa-pen"></i> Edit
+                </a>
+                <!-- Delete button link -->
+                <a href="#" onclick="confirmDelete({{ material.id }}, '{{ material.invoice_no|escapejs }}')" class="btn-danger" title="Delete">
+                    <i class="fa-solid fa-trash"></i>delete
+                </a>
+                <form id="delete-form-{{ material.id }}" method="POST" action="{% url 'inward_material_delete' material.id %}" style="display: none;">
+                    {% csrf_token %}
+                </form>
+            </td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td colspan="7" style="text-align: center; font-weight: bold; color: gray;">No records found.</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+<script>
+    function confirmDelete(materialId, invoiceNo) {
+        if (confirm(`Are you sure you want to delete Inward Material (Invoice No: ${invoiceNo})?`)) {
+            document.getElementById(`delete-form-${materialId}`).submit();
+        }
+    }
+</script>
+<script>
+    // Open the form inside the modal for editing an inward material
+    function openInwardMaterialForm(materialId) {
+        let url = "{% url 'inward_material_edit' id='0' %}".replace('0', materialId);
+
+        // Fetch the form content for editing
+        fetch(url, {
+            headers: {
+                "X-Requested-With": "XMLHttpRequest"  // Ensures this is an AJAX request.
+            }
+        })
+            .then(response => response.text())  // Parse the response as text (HTML form)
+            .then(data => {
+                // Insert the form into the modal body
+                document.getElementById("modal-body").innerHTML = data;
+
+                // Show the modal to display the form
+                document.getElementById("inwardMaterialModal").style.display = "block";
+            })
+            .catch(error => {
+                console.error("Error loading form:", error);  // Log any errors during fetch
+            });
+    }
+
+    // Close the modal
+    function closeModal() {
+        document.getElementById("inwardMaterialModal").style.display = "none";
+    }
+
+    // Confirm delete action
+    function confirmDelete(materialId, invoiceNo) {
+        if (confirm(`Are you sure you want to delete Inward Material (Invoice No: ${invoiceNo})?`)) {
+            document.getElementById(`delete-form-${materialId}`).submit();
+        }
+    }
+</script>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1000px;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .add-button {
+        padding: 10px 15px;
+        background: linear-gradient(45deg, #87CEFA, #00008B);
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: 0.3s;
+        border: none;
+    }
+
+        .add-button:hover {
+            background: linear-gradient(45deg, #5ca5d6, #000070);
+        }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #fff;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+
+    th, td {
+        padding: 12px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #80bfff;
+        color: white;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f0f8ff;
+    }
+
+    tr:hover {
+        background-color: #e6f2ff;
+    }
+
+    th:last-child, td:last-child {
+        width: 150px;
+        text-align: center;
+    }
+
+    .action-buttons {
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+    }
+
+        .action-buttons a {
+            padding: 6px 10px;
+            text-decoration: none;
+            color: white;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    .btn-view, .btn-edit {
+        background: linear-gradient(45deg, #ff1493, #6a0dad);
+    }
+
+        .btn-view:hover, .btn-edit:hover {
+            background: linear-gradient(45deg, #e60073, #5c0aa5);
+        }
+
+    .btn-danger {
+        background: linear-gradient(270deg, #6a0dad, #ff1493);
+    }
+
+        .btn-danger:hover {
+            background: linear-gradient(270deg, #5c0aa5, #e60073);
+        }
+
+    .action-buttons i {
+        font-size: 20px; /* Increase icon size */
+        margin-right: 5px; /* Add some space between the icon and text */
+    }
+
+    /* Modal styles */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-content {
+        background-color: white;
+        margin: 10% auto;
+        padding: 20px;
+        width: 50%;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+        .close:hover {
+            color: black;
+        }
+</style>
+
+{% endblock %}

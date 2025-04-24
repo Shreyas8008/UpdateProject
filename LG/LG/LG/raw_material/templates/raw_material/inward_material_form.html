@@ -1,0 +1,149 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="form-container">
+    <h2>{{ title }}</h2>
+
+    <form method="POST">
+        {% csrf_token %}
+        <div class="form-grid">
+            {{ form.as_p }}
+        </div>
+
+        <button type="button" class="add-btn" onclick="addRow()">+ Add Item</button>
+
+        <table id="childTable" class="child-table">
+            <thead>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Item Code</th>
+                    <th>UOM</th>
+                    <th>Quantity</th>
+                    <th>No. of Bags</th>
+                    <th>Mfg Date</th>
+                    <th>Exp Date</th>
+                    <th>Lot No</th>
+                    <th>Repacking Batch No</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="childTableBody">
+                {% if child_items %}
+                {% for item in child_items %}
+                <tr>
+                    <td>
+                        <select name="item_code[]" onchange="fetchItemFromCode(this)">
+                            <option value="">Select Item Code</option>
+                            {% for item_detail in item_master %}
+                            <option value="{{ item_detail.id }}"
+                                    data-name="{{ item_detail.item_name }}"
+                                    data-uom="{{ item_detail.uom }}"
+                                    {% if item_detail.id == item.item_code.id %}selected{% endif %}>
+                                {{ item_detail.item_code }}
+                            </option>
+                            {% endfor %}
+                        </select>
+                    </td>
+                    <td>
+                        <select name="item_name[]" onchange="fetchItemFromName(this)">
+                            <option value="">Select Item Name</option>
+                            {% for item_detail in item_master %}
+                            <option value="{{ item_detail.id }}"
+                                    data-code="{{ item_detail.item_code }}"
+                                    data-uom="{{ item_detail.uom }}"
+                                    {% if item_detail.id == item.item_name.id %}selected{% endif %}>
+                                {{ item_detail.item_name }}
+                            </option>
+                            {% endfor %}
+                        </select>
+                    </td>
+                    <td><input type="text" name="uom[]" value="{{ item.uom }}" required></td>
+                    <td><input type="number" name="quantity[]" value="{{ item.quantity }}" required></td>
+                    <td><input type="number" name="no_of_bags[]" value="{{ item.no_of_bags }}" required></td>
+                    <td><input type="date" name="mfg_date[]" value="{{ item.mfg_date }}" required></td>
+                    <td><input type="date" name="exp_date[]" value="{{ item.exp_date }}" required></td>
+                    <td><input type="number" name="lot_no[]" value="{{ item.lot_no }}" required></td>
+                    <td><input type="number" name="repacking_batch_no[]" value="{{ item.repacking_batch_no }}" required></td>
+                    <td><button type="button" onclick="removeRow(this)">Remove</button></td>
+                </tr>
+                {% endfor %}
+                {% endif %}
+            </tbody>
+        </table>
+
+        <br>
+        <div class="button-group">
+            <button type="submit">Save</button>
+            <a href="{% url 'inward_material_list' %}" class="close-button">Close</a>
+        </div>
+    </form>
+</div>
+
+<script>
+    function addRow() {
+        let table = document.getElementById("childTableBody");
+        let newRow = document.createElement("tr");
+
+        newRow.innerHTML = `
+            <td>
+                <select name="item_code[]" onchange="fetchItemFromCode(this)">
+                    <option value="">Select Item Code</option>
+                    {% for item_detail in item_master %}
+                        <option value="{{ item_detail.id }}"
+                                data-name="{{ item_detail.item_name }}"
+                                data-uom="{{ item_detail.uom }}">
+                            {{ item_detail.item_code }}
+                        </option>
+                    {% endfor %}
+                </select>
+            </td>
+            <td>
+                <select name="item_name[]" onchange="fetchItemFromName(this)">
+                    <option value="">Select Item Name</option>
+                    {% for item_detail in item_master %}
+                        <option value="{{ item_detail.id }}"
+                                data-code="{{ item_detail.item_code }}"
+                                data-uom="{{ item_detail.uom }}">
+                            {{ item_detail.item_name }}
+                        </option>
+                    {% endfor %}
+                </select>
+            </td>
+            <td><input type="text" name="uom[]" required></td>
+            <td><input type="number" name="quantity[]" required></td>
+            <td><input type="number" name="no_of_bags[]" required></td>
+            <td><input type="date" name="mfg_date[]" required></td>
+            <td><input type="date" name="exp_date[]" required></td>
+            <td><input type="number" name="lot_no[]" required></td>
+            <td><input type="number" name="repacking_batch_no[]" required></td>
+            <td><button type="button" onclick="removeRow(this)">Remove</button></td>
+        `;
+
+        table.appendChild(newRow);
+    }
+
+    function removeRow(button) {
+        button.closest("tr").remove();
+    }
+
+    function fetchItemFromCode(selectElement) {
+        let selectedOption = selectElement.options[selectElement.selectedIndex];
+        let itemNameDropdown = selectElement.closest("tr").querySelector('select[name="item_name[]"]');
+        let uomField = selectElement.closest("tr").querySelector('input[name="uom[]"]');
+
+        itemNameDropdown.value = selectedOption.value;
+        uomField.value = selectedOption.getAttribute('data-uom');
+    }
+
+    function fetchItemFromName(selectElement) {
+        let selectedOption = selectElement.options[selectElement.selectedIndex];
+        let itemCodeDropdown = selectElement.closest("tr").querySelector('select[name="item_code[]"]');
+        let uomField = selectElement.closest("tr").querySelector('input[name="uom[]"]');
+
+        itemCodeDropdown.value = selectedOption.value;
+        uomField.value = selectedOption.getAttribute('data-uom');
+    }
+</script>
+{% endblock %}

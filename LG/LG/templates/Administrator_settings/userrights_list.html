@@ -1,0 +1,22 @@
+<h2>User Rights</h2>
+<a href="{% url 'userrights_add' %}">Add New</a>
+<table>
+    <tr><th>User</th><th>Form</th><th>Permissions</th><th>Actions</th></tr>
+    {% for right in rights %}
+    <tr>
+        <td>{{ right.user }}</td>
+        <td>{{ right.form_name }}</td>
+        <td>
+            View: {{ right.can_view }},
+            Add: {{ right.can_add }},
+            Edit: {{ right.can_edit }},
+            Delete: {{ right.can_delete }},
+            All: {{ right.all_access }}
+        </td>
+        <td>
+            <a href="{% url 'userrights_edit' right.id %}">Edit</a> |
+            <a href="{% url 'userrights_delete' right.id %}">Delete</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>

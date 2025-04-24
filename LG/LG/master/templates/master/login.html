@@ -1,0 +1,106 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #8e44ad, #3498db);
+            background-attachment: fixed;
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 40px 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 350px;
+            text-align: center;
+        }
+
+            .login-container h2 {
+                margin-bottom: 20px;
+                color: #333;
+                font-size: 24px;
+            }
+
+            .login-container input[type="text"],
+            .login-container input[type="password"] {
+                width: 60%;
+                padding: 12px 15px;
+                margin: 10px 0;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-sizing: border-box;
+                transition: border-color 0.3s;
+                display: block; /* This will make them block-level elements */
+                margin-left: auto; /* Optional: to center them horizontally */
+                margin-right: auto; /* Optional: to center them horizontally */
+            }
+
+
+                .login-container input[type="text"]:focus,
+                .login-container input[type="password"]:focus {
+                    border-color: #3498db;
+                    box-shadow: 0 0 5px rgba(52, 152, 219, 0.4);
+                }
+
+            .login-container input[type="submit"] {
+                width: 30%;
+                padding: 12px;
+                background-color: #3498db;
+                border: none;
+                border-radius: 5px;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+                transition: background 0.3s;
+            }
+
+                .login-container input[type="submit"]:hover {
+                    background-color: #2980b9;
+                }
+
+        .forgot-password {
+            margin-top: 15px;
+        }
+
+            .forgot-password a {
+                color: #3498db;
+                text-decoration: none;
+                font-size: 14px;
+            }
+
+                .forgot-password a:hover {
+                    text-decoration: underline;
+                }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+</body>
+</html>
+
+
+
+
+

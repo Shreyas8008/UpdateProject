@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>LG</Name>
+    <RootNamespace>LG</RootNamespace>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>7477ecf9-1046-4e14-94d2-180103328af2</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>LG.settings</DjangoSettingsModule>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="manage.py" />
+    <Compile Include="LG\__init__.py" />
+    <Compile Include="LG\settings.py" />
+    <Compile Include="LG\urls.py" />
+    <Compile Include="LG\wsgi.py" />
+    <Compile Include="master\forms.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="master\models.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="master\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="master\views.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="master\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="raw_material\forms.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="raw_material\models.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="raw_material\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="raw_material\views.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="raw_material\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="LG\" />
+    <Folder Include="LG\templates\" />
+    <Folder Include="master\" />
+    <Folder Include="master\migrations\" />
+    <Folder Include="master\templates\" />
+    <Folder Include="master\templates\master\" />
+    <Folder Include="raw_material\" />
+    <Folder Include="raw_material\migrations\" />
+    <Folder Include="raw_material\templates\" />
+    <Folder Include="raw_material\templates\raw_material\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LG\templates\base.html" />
+    <Content Include="master\templates\master\category_form.html" />
+    <Content Include="master\templates\master\category_list.html" />
+    <Content Include="master\templates\master\company_form.html" />
+    <Content Include="master\templates\master\customer_detail_form.html" />
+    <Content Include="master\templates\master\customer_list.html" />
+    <Content Include="master\templates\master\item_form.html" />
+    <Content Include="master\templates\master\item_list.html" />
+    <Content Include="master\templates\master\login.html" />
+    <Content Include="master\templates\master\vendor_form.html" />
+    <Content Include="master\templates\master\vendor_list.html" />
+    <Content Include="raw_material\templates\raw_material\inward_material_form.html" />
+    <Content Include="raw_material\templates\raw_material\inward_material_list.html" />
+    <Content Include="requirements.txt" />
+    <Content Include="db.sqlite3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.html">
+      <SubType>WebBrowser</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.13</Version>
+      <Description>env (Python 3.13 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

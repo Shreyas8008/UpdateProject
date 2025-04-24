@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📦 Stock Statement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #007BFF;
+        }
+
+        form, .top-controls {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        select, button, input[type="text"] {
+            padding: 8px;
+            font-size: 16px;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid #007BFF;
+        }
+
+        input[type="text"] {
+            width: 200px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+            button:hover {
+                background-color: #0056b3;
+            }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        @keyframes blink {
+            0% {
+                background-color: #ff4d4d;
+            }
+
+            50% {
+                background-color: #ffcccc;
+            }
+
+            100% {
+                background-color: #ff4d4d;
+            }
+        }
+
+        .low-stock {
+            animation: blink 1s infinite;
+            color: white;
+            font-weight: bold;
+        }
+
+        .reorder {
+            color: yellow;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        #snackbar {
+            visibility: hidden;
+            min-width: 250px;
+            background-color: #ff4d4d;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            position: fixed;
+            z-index: 1;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 8px;
+            font-size: 16px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .show {
+            visibility: visible;
+            animation: fadein 0.5s, fadeout 0.5s 3s;
+        }
+
+        @media (max-width: 768px) {
+            table {
+                font-size: 14px;
+            }
+
+            th, td {
+                padding: 8px;
+            }
+
+            input[type="text"] {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2>📦 Stock Statement</h2>
+
+    <div class="top-controls">
+        <form method="GET" style="display:inline-block;">
+            <label for="category">Filter by Category:</label>
+            <select name="category" id="category">
+                <option value="all" {% if category_filter == "all" %}selected{% endif %}>All</option>
+                <option value="raw_material" {% if category_filter == "raw_material" %}selected{% endif %}>Raw Material</option>
+                <option value="packing_material" {% if category_filter == "packing_material" %}selected{% endif %}>Packing Material</option>
+                <option value="finished_goods" {% if category_filter == "finished_goods" %}selected{% endif %}>Finished Goods</option>
+            </select>
+            <button type="submit">Filter</button>
+        </form>
+
+        <input type="text" id="searchInput" placeholder="🔍 Search Item..." onkeyup="searchTable()" />
+
+        <button onclick="window.print()">🖨 Print / Save PDF</button>
+    </div>
+
+    <table id="stockTable">
+        <thead>
+            <tr>
+                <th>Item Code</th>
+                <th>Item Name</th>
+                <th>Category</th>
+                <th>ROL</th>
+                <th>Balance Qty</th>
+                <th>Inward Stock</th>
+                <th>Issued Stock</th>
+                <th>Closing Stock</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in stock_data %}
+            <tr class="{% if item.needs_reorder %}low-stock{% endif %}">
+                <td>{{ item.item_code }}</td>
+                <td>{{ item.item_name }}</td>
+                <td>{{ item.category }}</td>
+                <td>{{ item.rol }} kg</td>
+                <td>{{ item.opening_stock }} kg</td>
+                <td>{{ item.inward_stock }} kg</td>
+                <td>{{ item.issued_stock }} kg</td>
+                <td>{{ item.closing_stock }} kg</td>
+                <td>
+                    {% if item.needs_reorder %}
+                    <span class="reorder">⚠ Reorder Needed</span>
+                    {% else %}
+                    ✅ Sufficient Stock
+                    {% endif %}
+                </td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="9">No data available.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div id="snackbar">⚠ Stock Low: <span id="snackbar-text"></span></div>
+
+    <audio id="beep-sound" preload="auto">
+        <source src="{% static "C:\Users\Admin\Desktop\Demo\LG_sat\LG_sat\LG\static\beep-01a.wav" %}" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let lowStockItems = [];
+            let playBeep = false;
+
+            {% for item in stock_data %}
+            {% if item.needs_reorder %}
+            lowStockItems.push("⚠ {{ item.item_name }} ({{ item.item_code }}) is below ROL!");
+            playBeep = true;
+            {% endif %}
+            {% endfor %}
+
+            if (lowStockItems.length > 0) {
+                const message = lowStockItems.join('\n');
+                showSnackbar(message);
+                alert(message);  // Trigger user interaction first
+
+                if (playBeep) {
+                    playBeepSound();
+                }
+            }
+        }); // ✅ This closes the DOMContentLoaded block
+
+        function playBeepSound() {
+            const beep = document.getElementById("beep-sound");
+            if (beep) {
+                beep.volume = 1.0;
+                beep.muted = false;
+                beep.play().catch(err => console.warn("Autoplay blocked:", err));
+            }
+        }
+
+
+
+
+    function showSnackbar(message) {
+        const snackbar = document.getElementById("snackbar");
+        document.getElementById("snackbar-text").textContent = message;
+        snackbar.classList.add("show");
+        setTimeout(() => snackbar.classList.remove("show"), 4000);
+    }
+
+    function searchTable() {
+        const input = document.getElementById("searchInput").value.toLowerCase();
+        const rows = document.querySelectorAll("#stockTable tbody tr");
+        rows.forEach(row => {
+            const text = row.textContent.toLowerCase();
+            row.style.display = text.includes(input) ? "" : "none";
+        });
+    }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Master{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+    <style>
+        /* Fixed Navbar */
+        .navbar {
+            background-color: #B0C4DE !important;
+            position: fixed !important;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .nav-link, .dropdown-toggle {
+            color: white !important;
+        }
+
+        .dropdown-menu {
+            background-color: #B0C4DE;
+        }
+
+        .dropdown-item {
+            color: white !important;
+        }
+
+            .dropdown-item:hover {
+                background-color: #495057;
+            }
+
+        .logout-btn {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+
+        /* Prevents content from hiding behind the fixed navbar */
+        body {
+            padding-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            {% if request.user.is_authenticated %}
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- Master Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="masterDropdown" role="button" data-bs-toggle="dropdown">
+                            Master
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="masterDropdown">
+                            <li><a class="dropdown-item" href="{% url 'customer_list' %}">Customer</a></li>
+                            <li><a class="dropdown-item" href="{% url 'vendor_list' %}">Vendor</a></li>
+                            <li><a class="dropdown-item" href="{% url 'category_list' %}">Category</a></li>
+                            <li><a class="dropdown-item" href="{% url 'company_form' %}">company</a></li>
+                            <li><a class="dropdown-item" href="{% url 'item_list' %}">ItemDetail</a></li>
+                        </ul>
+                    </li>
+
+                 
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="rawDropdown" role="button" data-bs-toggle="dropdown">
+                            Raw Materials
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="rawDropdown">
+                            <li>
+                                <a href="{% url 'inward_material_list' %}">Inward Material</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- Logout Button -->
+            <a href="{% url 'logout' %}" class="btn btn-danger logout-btn">
+                <i class="fas fa-sign-out-alt"></i> Logout
+            </a>
+            {% endif %}
+        </div>
+    </nav>
+
+    <main class="container mt-4">
+        {% block content %}{% endblock %}
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
